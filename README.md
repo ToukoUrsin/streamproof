@@ -6,6 +6,8 @@ A photograph can raise a question. It cannot tell you whether water is safe. Str
 
 Built from scratch on September 21, 2026. This is a working prototype with **OpenCV 5.0.0**, a Python/FastAPI processing service, persistent evidence records, and a responsive browser workspace. There is no model API, telemetry, or external inference dependency.
 
+[Download the recorded demo and English captions](https://github.com/ToukoUrsin/streamproof/releases/tag/demo-2026-09-21) · [Media provenance and edit notes](docs/MEDIA.md)
+
 ![Actual Streamproof workspace using a historical CC0 demonstration photograph](media/01-workspace.png)
 
 The recorded local walkthrough exercised five observations: a historical baseline, a programmed baseline/change pair, a lighting control and a blur control. Its exported packet passed the independent integrity verifier with six linked audit events. The example review is explicitly labeled as an AI-assisted demo operator; it is not a field assessment. Twenty-four local tests pass; hosted CI has not been verified.
