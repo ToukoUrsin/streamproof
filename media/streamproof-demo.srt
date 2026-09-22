@@ -1,0 +1,127 @@
+1
+00:00:00,500 --> 00:00:08,626
+A photograph of a stream can raise an important question. But a single
+image rarely gives someone enough evidence to answer it.
+
+2
+00:00:08,626 --> 00:00:16,014
+Streamproof is a field notebook for a better second look. It preserves
+the source, checks whether a photograph supports comparison,
+
+3
+00:00:16,014 --> 00:00:23,401
+and asks for the next useful observation. What you are seeing is the
+actual local prototype, beginning with a historical,
+
+4
+00:00:23,401 --> 00:00:24,509
+openly licensed photograph.
+
+5
+00:00:26,009 --> 00:00:33,601
+The water region is selected explicitly. OpenCV checks image detail,
+exposure, bright reflections and the size of that region.
+
+6
+00:00:33,601 --> 00:00:40,393
+This photograph passes all four engineering checks, so it becomes a
+baseline. The next request is practical:
+
+7
+00:00:40,393 --> 00:00:48,383
+return to the same viewpoint in similar light, with stable bank
+landmarks still in the frame. These are image measurements.
+
+8
+00:00:48,383 --> 00:00:51,180
+They are not measurements of water chemistry.
+
+9
+00:00:52,680 --> 00:01:00,817
+Now we use a clearly labeled programmed control. One patch has been
+deliberately recolored, while the bank stays fixed.
+
+10
+00:01:00,817 --> 00:01:08,526
+OpenCV aligns features outside the water, checks the background for a
+lighting shift, and measures the overlapping region.
+
+11
+00:01:08,526 --> 00:01:15,807
+About sixty-seven percent of its pixels exceed the display-distance
+threshold. The policy asks for a close view,
+
+12
+00:01:15,807 --> 00:01:23,516
+an upstream view and context. The overlay and decision trace show
+exactly why. No pollution diagnosis is generated.
+
+13
+00:01:25,016 --> 00:01:34,563
+A different input needs a different response. Here the entire scene
+becomes brighter, and we compare it with the original control baseline.
+
+14
+00:01:34,563 --> 00:01:43,677
+The apparent change is large, but the background changes too.
+Streamproof marks the comparison inconclusive and requests similar light
+and exposure.
+
+15
+00:01:43,677 --> 00:01:50,186
+That distinction matters: a dramatic pixel difference should not
+automatically become a dramatic environmental claim.
+
+16
+00:01:51,686 --> 00:01:58,753
+The blur control fails even earlier. Image detail falls below the
+quality threshold, so comparison stops.
+
+17
+00:01:58,753 --> 00:02:05,377
+Instead of inventing an explanation, the notebook requests a steadier
+photograph with textured bank features.
+
+18
+00:02:05,377 --> 00:02:14,210
+The failed observation is still preserved. This makes the limits of the
+evidence visible, rather than quietly discarding inconvenient inputs.
+
+19
+00:02:15,710 --> 00:02:22,009
+Interpretation is a separate, recorded step. This example is explicitly
+signed as an AI-assisted demo operator,
+
+20
+00:02:22,009 --> 00:02:31,065
+and the note says the patch was deliberately recolored. It is not a
+field assessment. In actual use, a person would record what
+
+21
+00:02:31,065 --> 00:02:40,121
+they know, what remains uncertain, and what evidence is still needed.
+The application stores that assessment alongside the original
+measurements without treating a
+
+22
+00:02:40,121 --> 00:02:42,877
+completed form as proof of water safety.
+
+23
+00:02:44,377 --> 00:02:51,472
+Export the source fingerprints, selected regions, measurements,
+decisions and review as an inspectable evidence packet.
+
+24
+00:02:51,472 --> 00:03:00,931
+A separate verifier checks its linked audit records. That establishes
+internal consistency, not where or when a photograph was taken.
+
+25
+00:03:00,931 --> 00:03:09,918
+The prototype runs real OpenCV five with twenty-four passing local
+tests. Field calibration and expert evaluation are still ahead.
+
+26
+00:03:09,918 --> 00:03:15,120
+Streamproof: notice a change, keep the evidence, and let people decide.

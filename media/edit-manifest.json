@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "source": "Actual integrated-browser CDP screencast frames, timestamped within each capture chunk",
+  "chapter_order": [1, 2, 3, 4, 5, 6, 7],
+  "suffix_policy": "Concatenate sceneN, sceneNb, sceneNc in filename order; remove idle gaps between recordings; preserve every within-chunk frame in capture-timestamp order",
+  "timestamp_normalization": "Sort each chunk by its original CDP timestamp. In scene6, 00002.jpg was captured 34 milliseconds before 00001.jpg but delivered afterward; both actual frames are retained in capture order.",
+  "chapters": {
+    "1": {"purpose": "Historical CC0 River Ver source and manual water region"},
+    "2": {
+      "purpose": "Real quality checks and completed baseline",
+      "append_frames": [{"file": "scene3/00000.jpg", "duration": 1.0}],
+      "note": "The baseline response arrived between capture sessions. Reuse the next session's actual initial completed-baseline frame after the real processing frames. No result is synthesized."
+    },
+    "3": {"purpose": "Labeled synthetic recoloring, 67 percent display-distance result and decision trace"},
+    "4": {"purpose": "Lighting control, original synthetic reference and inconclusive policy"},
+    "5": {"purpose": "Blur control and actual retake request"},
+    "6": {"purpose": "Explicit AI-assisted demo operator assessment, not a field assessment"},
+    "7": {"purpose": "Actual export controls and method explanation"}
+  },
+  "pacing": "pacing.json adds explanatory holds on specific original frames. Remaining chapter duration holds the final captured state. Audio is never sped up.",
+  "claims": "Actual local prototype; historical photograph and programmed controls; no environmental diagnosis, current incident, human field review or AWS execution claim"
+}
