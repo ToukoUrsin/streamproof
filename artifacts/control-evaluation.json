@@ -1,0 +1,409 @@
+{
+  "generated_at": "2026-09-22T02:27:44.211960+00:00",
+  "opencv": "5.0.0",
+  "python": "3.14.7",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "field_validation": false,
+  "scope": "Programmed controls exercise known branches; historical images demonstrate single-image processing. No sensitivity, specificity or water-quality accuracy claim.",
+  "results": [
+    {
+      "sample": "control-baseline",
+      "kind": "synthetic_fixture",
+      "quality": {
+        "accepted": true,
+        "checks": [
+          {
+            "key": "detail",
+            "label": "Image detail",
+            "value": 1272.8,
+            "unit": "Laplacian variance",
+            "pass": true,
+            "note": "Low detail can be blur or naturally smooth water; retake before comparison."
+          },
+          {
+            "key": "exposure",
+            "label": "Exposure",
+            "value": 0.0,
+            "unit": "% clipped pixels",
+            "pass": true,
+            "note": "Very dark or saturated pixels hide visible detail."
+          },
+          {
+            "key": "glare",
+            "label": "Bright reflections",
+            "value": 0.0,
+            "unit": "% of region",
+            "pass": true,
+            "note": "Bright, low-saturation pixels are a reflection proxy, not a water measurement."
+          },
+          {
+            "key": "resolution",
+            "label": "Selected area",
+            "value": 214272,
+            "unit": "pixels",
+            "pass": true,
+            "note": "A useful selected area makes repeat comparisons less fragile."
+          }
+        ],
+        "mean_brightness": 105.31
+      },
+      "comparison": {
+        "comparable": true,
+        "reason": "Views aligned using stable features outside the selected water area.",
+        "matches": 2400,
+        "inlier_ratio": 1.0,
+        "overlap_fraction": 1.0,
+        "histogram_distance": 0.0,
+        "changed_fraction": 0.0,
+        "median_lab_distance": 0.0,
+        "brightness_shift": 0.0,
+        "background_shift": 0.0,
+        "lighting_confounded": false,
+        "notice": "Not calibrated water quality. Same-view appearance differences require contextual human review."
+      },
+      "policy": "review",
+      "processing_ms": 825.2
+    },
+    {
+      "sample": "control-change",
+      "kind": "synthetic_fixture",
+      "quality": {
+        "accepted": true,
+        "checks": [
+          {
+            "key": "detail",
+            "label": "Image detail",
+            "value": 1281.8,
+            "unit": "Laplacian variance",
+            "pass": true,
+            "note": "Low detail can be blur or naturally smooth water; retake before comparison."
+          },
+          {
+            "key": "exposure",
+            "label": "Exposure",
+            "value": 0.0,
+            "unit": "% clipped pixels",
+            "pass": true,
+            "note": "Very dark or saturated pixels hide visible detail."
+          },
+          {
+            "key": "glare",
+            "label": "Bright reflections",
+            "value": 0.0,
+            "unit": "% of region",
+            "pass": true,
+            "note": "Bright, low-saturation pixels are a reflection proxy, not a water measurement."
+          },
+          {
+            "key": "resolution",
+            "label": "Selected area",
+            "value": 214272,
+            "unit": "pixels",
+            "pass": true,
+            "note": "A useful selected area makes repeat comparisons less fragile."
+          }
+        ],
+        "mean_brightness": 122.05
+      },
+      "comparison": {
+        "comparable": true,
+        "reason": "Views aligned using stable features outside the selected water area.",
+        "matches": 2393,
+        "inlier_ratio": 1.0,
+        "overlap_fraction": 1.0,
+        "histogram_distance": 0.6521,
+        "changed_fraction": 0.6697,
+        "median_lab_distance": 42.72,
+        "brightness_shift": 16.74,
+        "background_shift": 0.0,
+        "lighting_confounded": false,
+        "notice": "Not calibrated water quality. Same-view appearance differences require contextual human review."
+      },
+      "policy": "change",
+      "processing_ms": 472.0
+    },
+    {
+      "sample": "control-blur",
+      "kind": "synthetic_fixture",
+      "quality": {
+        "accepted": false,
+        "checks": [
+          {
+            "key": "detail",
+            "label": "Image detail",
+            "value": 0.5,
+            "unit": "Laplacian variance",
+            "pass": false,
+            "note": "Low detail can be blur or naturally smooth water; retake before comparison."
+          },
+          {
+            "key": "exposure",
+            "label": "Exposure",
+            "value": 0.0,
+            "unit": "% clipped pixels",
+            "pass": true,
+            "note": "Very dark or saturated pixels hide visible detail."
+          },
+          {
+            "key": "glare",
+            "label": "Bright reflections",
+            "value": 0.0,
+            "unit": "% of region",
+            "pass": true,
+            "note": "Bright, low-saturation pixels are a reflection proxy, not a water measurement."
+          },
+          {
+            "key": "resolution",
+            "label": "Selected area",
+            "value": 214272,
+            "unit": "pixels",
+            "pass": true,
+            "note": "A useful selected area makes repeat comparisons less fragile."
+          }
+        ],
+        "mean_brightness": 105.22
+      },
+      "comparison": null,
+      "policy": "retake",
+      "processing_ms": 102.3
+    },
+    {
+      "sample": "control-glare",
+      "kind": "synthetic_fixture",
+      "quality": {
+        "accepted": false,
+        "checks": [
+          {
+            "key": "detail",
+            "label": "Image detail",
+            "value": 199.9,
+            "unit": "Laplacian variance",
+            "pass": true,
+            "note": "Low detail can be blur or naturally smooth water; retake before comparison."
+          },
+          {
+            "key": "exposure",
+            "label": "Exposure",
+            "value": 91.1,
+            "unit": "% clipped pixels",
+            "pass": false,
+            "note": "Very dark or saturated pixels hide visible detail."
+          },
+          {
+            "key": "glare",
+            "label": "Bright reflections",
+            "value": 91.1,
+            "unit": "% of region",
+            "pass": false,
+            "note": "Bright, low-saturation pixels are a reflection proxy, not a water measurement."
+          },
+          {
+            "key": "resolution",
+            "label": "Selected area",
+            "value": 214272,
+            "unit": "pixels",
+            "pass": true,
+            "note": "A useful selected area makes repeat comparisons less fragile."
+          }
+        ],
+        "mean_brightness": 240.81
+      },
+      "comparison": null,
+      "policy": "retake",
+      "processing_ms": 84.7
+    },
+    {
+      "sample": "control-dark",
+      "kind": "synthetic_fixture",
+      "quality": {
+        "accepted": false,
+        "checks": [
+          {
+            "key": "detail",
+            "label": "Image detail",
+            "value": 14.7,
+            "unit": "Laplacian variance",
+            "pass": false,
+            "note": "Low detail can be blur or naturally smooth water; retake before comparison."
+          },
+          {
+            "key": "exposure",
+            "label": "Exposure",
+            "value": 100.0,
+            "unit": "% clipped pixels",
+            "pass": false,
+            "note": "Very dark or saturated pixels hide visible detail."
+          },
+          {
+            "key": "glare",
+            "label": "Bright reflections",
+            "value": 0.0,
+            "unit": "% of region",
+            "pass": true,
+            "note": "Bright, low-saturation pixels are a reflection proxy, not a water measurement."
+          },
+          {
+            "key": "resolution",
+            "label": "Selected area",
+            "value": 214272,
+            "unit": "pixels",
+            "pass": true,
+            "note": "A useful selected area makes repeat comparisons less fragile."
+          }
+        ],
+        "mean_brightness": 10.29
+      },
+      "comparison": null,
+      "policy": "retake",
+      "processing_ms": 101.7
+    },
+    {
+      "sample": "control-light",
+      "kind": "synthetic_fixture",
+      "quality": {
+        "accepted": true,
+        "checks": [
+          {
+            "key": "detail",
+            "label": "Image detail",
+            "value": 2855.3,
+            "unit": "Laplacian variance",
+            "pass": true,
+            "note": "Low detail can be blur or naturally smooth water; retake before comparison."
+          },
+          {
+            "key": "exposure",
+            "label": "Exposure",
+            "value": 0.0,
+            "unit": "% clipped pixels",
+            "pass": true,
+            "note": "Very dark or saturated pixels hide visible detail."
+          },
+          {
+            "key": "glare",
+            "label": "Bright reflections",
+            "value": 0.0,
+            "unit": "% of region",
+            "pass": true,
+            "note": "Bright, low-saturation pixels are a reflection proxy, not a water measurement."
+          },
+          {
+            "key": "resolution",
+            "label": "Selected area",
+            "value": 214272,
+            "unit": "pixels",
+            "pass": true,
+            "note": "A useful selected area makes repeat comparisons less fragile."
+          }
+        ],
+        "mean_brightness": 182.69
+      },
+      "comparison": {
+        "comparable": true,
+        "reason": "Views aligned using stable features outside the selected water area.",
+        "matches": 1899,
+        "inlier_ratio": 0.982,
+        "overlap_fraction": 1.0,
+        "histogram_distance": 0.382,
+        "changed_fraction": 1.0,
+        "median_lab_distance": 77.21,
+        "brightness_shift": 77.39,
+        "background_shift": 69.36,
+        "lighting_confounded": true,
+        "notice": "Not calibrated water quality. Same-view appearance differences require contextual human review."
+      },
+      "policy": "lighting",
+      "processing_ms": 999.7
+    },
+    {
+      "sample": "river-ver",
+      "kind": "historical_public_photo",
+      "quality": {
+        "accepted": true,
+        "checks": [
+          {
+            "key": "detail",
+            "label": "Image detail",
+            "value": 2409.4,
+            "unit": "Laplacian variance",
+            "pass": true,
+            "note": "Low detail can be blur or naturally smooth water; retake before comparison."
+          },
+          {
+            "key": "exposure",
+            "label": "Exposure",
+            "value": 0.0,
+            "unit": "% clipped pixels",
+            "pass": true,
+            "note": "Very dark or saturated pixels hide visible detail."
+          },
+          {
+            "key": "glare",
+            "label": "Bright reflections",
+            "value": 0.1,
+            "unit": "% of region",
+            "pass": true,
+            "note": "Bright, low-saturation pixels are a reflection proxy, not a water measurement."
+          },
+          {
+            "key": "resolution",
+            "label": "Selected area",
+            "value": 88704,
+            "unit": "pixels",
+            "pass": true,
+            "note": "A useful selected area makes repeat comparisons less fragile."
+          }
+        ],
+        "mean_brightness": 95.22
+      },
+      "comparison": null,
+      "policy": "baseline",
+      "processing_ms": 679.8
+    },
+    {
+      "sample": "river-liffey",
+      "kind": "historical_public_photo",
+      "quality": {
+        "accepted": true,
+        "checks": [
+          {
+            "key": "detail",
+            "label": "Image detail",
+            "value": 3413.3,
+            "unit": "Laplacian variance",
+            "pass": true,
+            "note": "Low detail can be blur or naturally smooth water; retake before comparison."
+          },
+          {
+            "key": "exposure",
+            "label": "Exposure",
+            "value": 0.2,
+            "unit": "% clipped pixels",
+            "pass": true,
+            "note": "Very dark or saturated pixels hide visible detail."
+          },
+          {
+            "key": "glare",
+            "label": "Bright reflections",
+            "value": 0.4,
+            "unit": "% of region",
+            "pass": true,
+            "note": "Bright, low-saturation pixels are a reflection proxy, not a water measurement."
+          },
+          {
+            "key": "resolution",
+            "label": "Selected area",
+            "value": 151716,
+            "unit": "pixels",
+            "pass": true,
+            "note": "A useful selected area makes repeat comparisons less fragile."
+          }
+        ],
+        "mean_brightness": 191.34
+      },
+      "comparison": null,
+      "policy": "baseline",
+      "processing_ms": 137.9
+    }
+  ]
+}
