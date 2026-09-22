@@ -5,3 +5,6 @@ __pycache__/
 *.pyc
 .env
 artifacts/private/
+media/raw/
+media/*.mp3
+media/*.mp4
